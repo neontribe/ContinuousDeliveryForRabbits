@@ -1,2 +1,2 @@
-# ContinuousDeploymentForRabbits
-A talk and demo about setting up Continuous Deployment for trivial projects.
+# ContinuousDeliveryForRabbits
+A talk and demo about setting up Continuous Delivery for trivial projects.
