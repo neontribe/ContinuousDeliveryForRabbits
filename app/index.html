@@ -7,9 +7,10 @@
     <img />
     <script src="./rabbit.js"></script>
     <script>
+      var bunny = new Rabbit();
       var r = document.querySelector('img');
-      r.src = window.rabbit.chooseImage();
-      r.addEventListener('click', window.rabbit.play.bind(window.rabbit));
+      r.src = bunny.chooseImage();
+      r.addEventListener('click', bunny.play.bind(bunny));
     </script>
   </body>
 </html>
