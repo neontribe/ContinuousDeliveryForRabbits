@@ -29,5 +29,18 @@ describe('A Rabbit', function(){
     expect(rabbit.pics).to.include(rabbit.chooseImage());
   });
 
+  describe('should have a "play" method', function(){
+
+    it('which is a function', function(){
+      expect(rabbit).to.respondTo('play');
+    });
+
+    it('which loads a sound', function(){
+
+    });
+
+  });
+
+
 
 });
