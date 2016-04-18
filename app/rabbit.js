@@ -45,6 +45,7 @@ Rabbit.prototype._player = function(url){
 }
 
 // Export node module.
+/* istanbul ignore next */
 if (typeof module !== 'undefined' && module.hasOwnProperty('exports')) {
     module.exports = Rabbit;
 }
