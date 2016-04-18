@@ -1,1 +1,7 @@
 language: node_js
+deploy:
+  provider: heroku
+  app:
+    heroku: whattherabbitsay-pre
+  api_key:
+    secure: EFi6QJEx+aaJTnbwy/coXwwQIxhhrWWX+WZP5E148Kl0m+31bewTrvilYDTXMkXju3vHKYLVmaybByLuogzb+aU73pSmqWD7aGoGpb6BSXW7j/0qCpht0U9GWprqs/IK8VnNDq8x4qXUsVGB+e9MJSt8HgwULRAWgIVfV5kEQGt0R7C4UC6J+BFlVqsyp7+Wj0hFQbW5H0/iRbOC5IrywoCe+/jvAbblCRbyrM6RSK/o1TugBWo/04wOq8lRnbDBckFlVKaftI97PZi8e/5JM1AYkJHMR0+r2qh/Y4sqpPQICEO0NvFBenggAHV8p0SEgx5AYy++ZlL12DKzjcBlPfpo2JZpzt923Og/uR9XCJON+3zNnDbiqmwviRnA4g+n62sqL5CwLsAN7wYu+VXGw41pSd3Kvl8hSn3wKWrKO3dHdWY0HWjjQlBusH4RHg+JIZDIhheaIXrwGDthnBhSXvk4HOdxc1KA0FrZ58ilIDsBhw8RPRl5C7+JP0bn+PwcFnDZ/2mOcCDqyTL7nNJge1JgWubYYbsy1beoXrESGHdIDy8J5YW/Md2w9KGfeXCxLn4p+AT2zc4p/hcQ85grznMYgPsQ2RBLkfsAm0Qra6t3B1myejvOlecGhVmfNrlv952QojzPp9JhufEJ/JVz751IcHOsR80Pocch31dlm1k=
