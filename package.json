@@ -1,0 +1,27 @@
+{
+  "name": "what-the-rabbit-say",
+  "version": "1.0.0",
+  "description": "An answer to a question",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neontribe/ContinuousDeliveryForRabbits.git"
+  },
+  "author": "Rupert Redington",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/neontribe/ContinuousDeliveryForRabbits/issues"
+  },
+  "homepage": "https://github.com/neontribe/ContinuousDeliveryForRabbits#readme",
+  "dependencies": {
+    "koa": "^1.2.0",
+    "koa-static": "^2.0.0"
+  },
+  "engines": {
+    "node": "4.4.3"
+  }
+}

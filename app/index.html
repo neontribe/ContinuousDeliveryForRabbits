@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>What the Rabbit Say</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <img />
+    <script src="./rabbit.js"></script>
+    <script>
+      var r = document.querySelector('img');
+      r.src = window.rabbit.chooseImage();
+      r.addEventListener('click', window.rabbit.play.bind(window.rabbit));
+    </script>
+  </body>
+</html>
