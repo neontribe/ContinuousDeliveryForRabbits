@@ -16,19 +16,20 @@ function loadAndPlay(url) {
   request.send();
 }
 
+function pick(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 function Rabbit () {
   this.pics = ['assets/r1.jpg', 'assets/r2.jpg', 'assets/r3.jpg'];
   this.sounds = ['assets/sfx1.mp3'];
 };
 
-Rabbit.prototype.pick = function(src) {
-  return src[Math.floor(Math.random() * src.length)];
-};
 Rabbit.prototype.chooseImage = function() {
-  return this.pick(this.pics);
+  return pick(this.pics);
 };
 Rabbit.prototype.play = function () {
-  loadAndPlay(this.pick(this.sounds));
+  loadAndPlay(pick(this.sounds));
 };
 
 // Export node module.
