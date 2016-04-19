@@ -25,7 +25,7 @@ module.exports = {
       "selenium_host"  : "ondemand.saucelabs.com",
       "silent": true,
       "username": process.env.SAUCE_USERNAME,
-      "access_key": process.env.SAUCE_KEY,
+      "access_key": process.env.SAUCE_ACCESS_KEY,
       "screenshots" : {
         "enabled" : false,
         "path" : ""

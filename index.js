@@ -1,3 +1,5 @@
+process.title = 'rabbitserver';
+
 var serve = require('koa-static');
 var app = require('koa')();
 

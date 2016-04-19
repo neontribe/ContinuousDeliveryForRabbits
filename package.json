@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "istanbul cover _mocha"
+    "stop": "pkill --signal SIGINT rabbitserver",
+    "test": "istanbul cover _mocha",
+    "nightwatch": "npm start & nightwatch --config test/nightwatch.js  --env chrome,ie11 && npm stop"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,7 @@
     "chai": "^3.5.0",
     "istanbul": "^0.4.3",
     "mocha": "^2.4.5",
+    "nightwatch": "^0.8.18",
     "sinon": "^1.17.3"
   }
 }
