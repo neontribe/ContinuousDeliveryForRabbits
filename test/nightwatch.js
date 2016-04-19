@@ -20,6 +20,18 @@ module.exports = {
 
   "test_settings" : {
     "default" : {
+      "launch_url" : "http://ondemand.saucelabs.com:80",
+      "selenium_port"  : 80,
+      "selenium_host"  : "ondemand.saucelabs.com",
+      "silent": true,
+      "username": process.env.SAUCE_USERNAME,
+      "access_key": process.env.SAUCE_KEY,
+      "screenshots" : {
+        "enabled" : false,
+        "path" : ""
+      }
+    },
+    "local" : {
       "launch_url" : "http://localhost",
       "selenium_port"  : 4444,
       "selenium_host"  : "localhost",
@@ -35,11 +47,19 @@ module.exports = {
       }
     },
 
-    "chrome" : {
-      "desiredCapabilities": {
-        "browserName": "chrome",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+    chrome: {
+      desiredCapabilities: {
+        browserName: 'chrome',
+        platform: 'OS X 10.11',
+        version: '47'
+      }
+    },
+
+    ie11: {
+      desiredCapabilities: {
+        browserName: 'internet explorer',
+        platform: 'Windows 10',
+        version: '11.0'
       }
     }
   }
