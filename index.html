@@ -46,6 +46,8 @@
 						<p>
 							<small><a href="http://www.neontribe.co.uk">rupert@neontribe</a> / <a href="http://twitter.com/rupertredington">@rupertredington</a></small>
 						</p>
+						<p class="fragment">Follow along at <a href="https://github.com/neontribe/ContinuousDeliveryForRabbits">https://github.com/neontribe/ContinuousDeliveryForRabbits</a></p>
+
 					</section>
 					<section>
 						<h2>For the avoidance of doubt:</h2>
@@ -131,7 +133,8 @@
 					<section>
 						<h1>Change Detection</h1>
 					</section>
-					<section data-background="./img/github.jpg">
+					<section>
+						<img src="./img/github.jpg" />
 					</section>
 				</section>
 
@@ -139,7 +142,12 @@
 					<section>
 						<h1>Integration</h1>
 					</section>
-					<section data-background="./img/travis.png">
+					<section>
+						<img src="./img/travis.png" />
+					</section>
+					<section>
+						<p>Service Hooks</p>
+						<p>Disposable Environments</p>
 					</section>
 				</section>
 
@@ -147,10 +155,76 @@
 					<section>
 						<h1>Deployment</h1>
 					</section>
-					<section data-background="./img/heroku.png">
+					<section>
+						<img src="./img/heroku.png" />
+					</section>
+					<section>
+						<h2>Platform as a Service</h2>
+						<code>heroku apps:create whattherabbitsay</code>
+						<code>heroku ps:scale web=1 --app whattherabbitsay</code>
+					</section>
+					<section>
+						<h2>Delegated Authority</h2>
+						<code>travis encrypt $(heroku auth:token) --add deploy.api_key</code>
+					</section>
+					<section>
+						<h2>Multiple Environments</h2>
 					</section>
 				</section>
 
+				<section>
+					<section>
+						<h1>Functional Testing</h1>
+					</section>
+					<section>
+						<a href="http://nightwatchjs.org/"><img src="img/nightwatch.png" /></a>
+					</section>
+					<section>
+						<h2>Need to run our own selenium server :-(</h2>
+						<code>selenium-standalone start</code>
+					</section>
+					<section>
+						<a href="https://saucelabs.com"><img src="img/saucelabs.jpg" /></a>
+					</section>
+					<section>
+						<h2>Need to allow SauceLabs' browsers to our app :-(</h2>
+						<code>~/sc/bin/sc -u $SAUCE_USERNAME -k $SAUCE_ACCESS_KEY</code>
+					</section>
+					<section>
+						<h2>We need a robot...</h2>
+						<code>
+<pre>addons:
+  sauce_connect: true
+
+before_script:
+  - npm start &
+
+script:
+  - npm test
+  - npm run nightwatch
+  - npm stop
+</pre>
+						</code>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Don't Panic</h2>
+						<h2 class="fragment">Don't Do It All At Once</h2>
+						<h2 class="fragment">The hard parts are mostly solved</h2>
+						<h2 class="fragment">These services have good documentation</h2>
+					</section>
+					<section data-background="./img/wiring.jpg">
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<a href="https://www.neontribe.co.uk"><img src="./img/neontribe_logo.png" style="border:none; background: transparent;" alt="Neontribe Logo - looks like a bug, or a bison, depending on your perspective"/></a>
+						<p><em>rupert@neontribe.co.uk</em></p>
+					</section>
+				</section>
 			</div>
 
 		</div>
