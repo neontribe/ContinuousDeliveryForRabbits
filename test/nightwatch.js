@@ -1,4 +1,3 @@
-const TRAVIS_JOB_NUMBER = process.env.TRAVIS_JOB_NUMBER;
 module.exports = {
   src_folders: ['test/e2e/'],
   output_folder: 'reports',
@@ -32,8 +31,8 @@ module.exports = {
         path: ''
       },
       desiredCapabilities: {
-        build: build-${TRAVIS_JOB_NUMBER},
-        'tunnel-identifier': TRAVIS_JOB_NUMBER,
+        build: 'build-' + process.env.TRAVIS_JOB_NUMBER,
+        'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER,
       }
     },
     chrome: {
