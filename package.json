@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/neontribe/ContinuousDeliveryForRabbits#readme",
   "dependencies": {
-    "koa": "^1.2.0",
-    "koa-static": "^2.0.0"
+    "koa": "2.2.0",
+    "koa-static": "3.0.0"
   },
   "engines": {
-    "node": "4.4.3"
+    "node": "7.5.0"
   }
 }
