@@ -1,8 +1,9 @@
-var serve = require('koa-static');
-var app = require('koa')();
+const Koa = require('koa');
+const static = require('koa-static');
+const app = new Koa();
 
-app.use(serve('app'));
+app.use(static('app'));
 
-var port = process.env.port || 3000;
+var port = process.env.PORT || 3000;
 app.listen(port);
 console.log('listening on port ' + port);
