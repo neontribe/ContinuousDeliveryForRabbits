@@ -1,11 +1,10 @@
 {
   "name": "what-the-rabbit-say",
   "version": "1.0.0",
-  "description": "An answer to a question",
+  "description": "A trivial app to make us rich",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "stop": "pkill --signal SIGINT rabbitserver",
     "test": "istanbul cover _mocha",
     "nightwatch": "nightwatch --config test/nightwatch.js  --env chrome,ie11"
   },
@@ -20,17 +19,17 @@
   },
   "homepage": "https://github.com/neontribe/ContinuousDeliveryForRabbits#readme",
   "dependencies": {
-    "koa": "^1.2.0",
-    "koa-static": "^2.0.0"
+    "koa": "2.2.0",
+    "koa-static": "3.0.0"
   },
   "engines": {
-    "node": "4.4.3"
+    "node": "7.5.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "istanbul": "^0.4.3",
-    "mocha": "^2.4.5",
-    "nightwatch": "^0.8.18",
-    "sinon": "^1.17.3"
+    "chai": "3.5.0",
+    "istanbul": "0.4.5",
+    "mocha": "3.3.0",
+    "nightwatch": "0.9.14",
+    "sinon": "2.1.0"
   }
 }
