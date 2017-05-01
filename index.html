@@ -160,12 +160,9 @@
 					</section>
 					<section>
 						<h2>Platform as a Service</h2>
-						<code>heroku apps:create whattherabbitsay</code>
-						<code>heroku ps:scale web=1 --app whattherabbitsay</code>
-					</section>
-					<section>
-						<h2>Delegated Authority</h2>
-						<code>travis encrypt $(heroku auth:token) --add deploy.api_key</code>
+						<code>heroku apps:create wtrs</code>
+						<br />
+						<code>heroku ps:scale web=1 --app wtrs</code>
 					</section>
 					<section>
 						<h2>Multiple Environments</h2>
@@ -202,7 +199,6 @@ before_script:
 script:
   - npm test
   - npm run nightwatch
-  - npm stop
 </pre>
 						</code>
 					</section>
