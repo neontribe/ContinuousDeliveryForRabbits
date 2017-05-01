@@ -1,9 +1,8 @@
-process.title = 'rabbitserver';
+const Koa = require('koa');
+const static = require('koa-static');
+const app = new Koa();
 
-var serve = require('koa-static');
-var app = require('koa')();
-
-app.use(serve('app'));
+app.use(static('app'));
 
 var port = process.env.PORT || 3000;
 app.listen(port);

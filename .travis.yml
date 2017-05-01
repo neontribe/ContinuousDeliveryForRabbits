@@ -1,6 +1,4 @@
 language: node_js
-node_js:
-  - "4.4.3"
 
 addons:
   sauce_connect: true
@@ -11,4 +9,3 @@ before_script:
 script:
   - npm test
   - npm run nightwatch
-  - npm stop
