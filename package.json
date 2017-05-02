@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "istanbul cover _mocha"
+    "test": "istanbul cover _mocha",
+    "nightwatch": "nightwatch --config test/nightwatch.js  --env chrome,ie11"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "chai": "3.5.0",
     "istanbul": "0.4.5",
     "mocha": "3.3.0",
+    "nightwatch": "0.9.14",
     "sinon": "2.1.0"
   }
 }
